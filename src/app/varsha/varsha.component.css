@@ -1,0 +1,8 @@
+input{
+    border:none;
+    border-bottom: 1px solid black;
+}
+input[type=text]:focus {
+    border: none;
+  }
+  

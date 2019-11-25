@@ -1,0 +1,57 @@
+<!-- <p>varsha works!</p>
+<form  #userfm='ngForm'>
+    <label>Enter name:</label>
+    <input type="text" name="nm" #nmfld="ngModel"  [(ngModel)]="nm" required>
+    <p  *ngIf="nmfld.invalid">Name is Required</p>
+</form> -->
+
+<div class="row">
+<div class="col-md-4 offset-md-2">
+      <h1>Create Account</h1>
+<form [formGroup]="userdet" (ngSubmit)="onSubmit()">
+   
+   <div class="form-group">
+    <input formControlName="uname" placeholder="Your Name" class="form-control"  [ngClass]="{ 'is-invalid': submitted && f.uname.errors }">
+    
+         <div *ngIf="submitted && f.uname.errors" class="invalid-feedback">
+               <p *ngIf="f.uname.errors.required">First Name is required</p>
+           </div>
+    </div>
+    
+    
+   <div class="form-group">
+    <input type="text" formControlName="unum" class='form-control' placeholder="Mobile Number"  [ngClass]="{ 'is-invalid': submitted && f.unum.errors }">
+    
+      <div *ngIf="submitted && f.unum.errors" class="invalid-feedback">
+      <p *ngIf="f.unum.errors.required">numbers sholud be atlest 10 </p>
+      
+   </div>
+   </div>
+   <div class="form-group">
+    <input formControlName="icode" class='form-control' placeholder="invite code"  [ngClass]="{ 'is-invalid': submitted && f.icode.errors }">
+    <div  *ngIf="submitted && f.icode.errors" class="invalid-feedback">
+         <p *ngIf="f.icode.errors.required">pls enter icode number</p>
+        </div>
+      </div>
+   
+      <div class="form-group">
+   
+    <input formControlName="email"  class='form-control' placeholder="Email"  [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+    <div  *ngIf="submitted && f.icode.errors" class="invalid-feedback">
+          <p *ngIf="f.email.errors.required">pls enter email</p>
+    </div>
+   </div>
+   <div class="form-group">
+   
+   <input formControlName="password" class='form-control' placeholder="password"  [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+   <div  *ngIf="submitted && f.password.errors" class="invalid-feedback">
+         <p *ngIf="f.password.errors.required">password must be atleast 6 characters</p>
+   </div>
+  </div>
+
+  </form>
+    
+    <button (click)="onSubmit()"class="btn btn-success">Register</button> 
+
+   </div>
+</div>

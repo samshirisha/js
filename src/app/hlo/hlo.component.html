@@ -1,0 +1,48 @@
+<!-----<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+
+<h1 >Template Driven Forms</h1>
+<form name="form" (ngSubmit)="b.form.valid&&onSubmit()" #b="ngForm"   [mustMatch]="['pafld','cpafld']" nonvalidate>
+ 
+               <div class="form-group">
+                    <label>Enter Name:</label>
+                    <input type="text" name="nme"  #nmfld="ngModel"  [(ngModel)]="nm" required  size="40" class="form-control" [ngClass]="{'is-invalid':b.submitted&&nmfld.invalid}">
+                    <p  *ngIf="b.submitted&&nmfld.invalid" class="invalid-feedback" >firstname is required</p>
+                </div>
+                
+                    <div class="form-group">        
+                        <label>Last Name:</label>
+                      <input type="text" name="lnme"  #lnmfld="ngModel"  [(ngModel)]="lnm" required size="40" class="form-control"[ngClass]="{'is-invalid':b.submitted&&lnmfld.invalid}" >
+                      <p  *ngIf="b.submitted&&lnmfld.invalid" class="invalid-feedback">lastname is required</p>
+                  </div>
+              
+                  <div class="form-group">
+                          <label>Email Name:</label>
+                          <input type="email" name="em"  #emfld="ngModel"  [(ngModel)]="em" required size="40" class="form-control" [ngClass]="{'is-invalid':b.submitted&&emfld.invalid}">
+                          <p  *ngIf="b.submitted&&emfld.invalid" class="invalid-feedback" >Email is required</p>
+                      </div>
+                      <div class="form-group">
+                              <label>password Box</label>
+                              <input type="password" name="pa"  #pafld="ngModel"  [(ngModel)]="pa" required size="40" class="form-control" [ngClass]="{'is-invalid':b.submitted&&pafld.invalid}">
+                              <p  *ngIf="b.submitted&&pafld.invalid" class="invalid-feedback"  >password is required</p>
+                             
+                          </div>
+                          <div class="form-group">
+                                  <label>Confirm password </label>
+                                  <input type="pass" name="em"  #cpafld="ngModel"  [(ngModel)]="cpa" required size="40" class="form-control"[ngClass]="{'is-invalid':b.submitted&&nmfld.invalid}" >
+                                  <p  *ngIf="b.submitted&&cpafld.invalid" >confirm password is required</p>
+                                  <p  *ngIf="b.submitted&&cpafld.mustMatch">password must match</p>
+                              </div>
+                              <div class="form-group">
+                                      <button class="btn btn-primary">Register</button>
+                              </div>
+                  
+              
+              </form>
+              
+    </div>
+</div>
+</div>
+</div>--->

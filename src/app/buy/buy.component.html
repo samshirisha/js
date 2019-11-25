@@ -1,0 +1,29 @@
+<p>buy works!</p>
+<p *ngFor="let a of data1">{{a.id}}</p>
+<main class="container-fluid">
+    <section class="row">
+    <div class="col-6 bg-warning">
+   <table class="table-bordered">
+    <tr>
+    <th>id</th>
+    <th>body</th>
+    <th>postId</th>
+    <th></th>
+    <th></th>
+    </tr>
+    <tr *ngFor="let u of data1">
+    <td>{{u.id}}</td>
+    <td>{{u.body}}</td>
+    <td>{{u.postId}}</td>
+    <td ><img src="assets/carrot.jpeg">{{u.img}}</td>
+
+    <td>
+    <button>Edit</button>
+    </td>
+    <td>
+    <button>Delete</button>
+    </td>
+   </tr>
+   </table>
+   </div>
+   

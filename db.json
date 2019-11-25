@@ -1,0 +1,62 @@
+{
+ 
+  "comments": [
+   
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode",
+      "img":"../assets/carrot.jpeg"
+    } ,
+    {
+      "id": 2,
+      "title": "json-server",
+      "author": "typicode",
+      "img":"../assets/potato-1.jpeg"
+    } ,
+    {
+      "id": 3,
+      "title": "json-server",
+      "author": "typicode",
+      "img":"../assets/tomato.jpeg"
+    },
+    
+    {
+      "id": 4,
+      "title": "json-server",
+      "author": "typicode",
+      "img":"../assets/brinjal.jpg"
+    } ,
+    {
+      "id": 5,
+      "title": "json-server",
+      "author": "typicode",
+      "img":"../assets/BushBeans.jpg"
+    } ,
+    {
+      "id": 6,
+      "title": "json-server",
+      "author": "typicode",
+      "img":"../assets/cabbage.jpg"
+    },
+    {
+      "id": 7,
+      "title": "json-server",
+      "author": "typicode",
+      "img":"../assets/leafy.jpg"
+    } ,
+    {
+      "id": 8,
+      "title": "json-server",
+      "author": "typicode",
+      "img":"../assets/mush.jpg"
+    } ,
+    {
+      "id": 9,
+      "title": "json-server",
+      "author": "typicode",
+      "img":"../assets/onion.jpg"
+    }
+  ]
+  
+}
